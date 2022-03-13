@@ -1,0 +1,29 @@
+h1 {
+    color: cadetblue;
+    font-size: 50px;
+}
+
+#first-heading{
+    color: black;
+    font-size: 30px;
+}
+
+.second-heading{
+    color: green;
+    font-size: 30px;
+}
+
+
+:root{
+    --my-color: red;
+}
+
+
+.third-heading{
+    color: var(--my-color);
+    font-size: 20px;
+}
+
+html, body{
+    margin :10px;
+}

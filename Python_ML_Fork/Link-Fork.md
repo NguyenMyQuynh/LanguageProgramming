@@ -1,0 +1,4 @@
+- https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code
+- https://github.com/longsube/ghichep-docker
+- https://github.com/guipsamora/pandas_exercises
+- https://github.com/ajcr/100-pandas-puzzles

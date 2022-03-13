@@ -1,0 +1,25 @@
+**How can I push to my fork from a clone of the original repo?
+I created a fork (let's call it myrepo) of another repository (let's call it orirepo) on GitHub. Later, I cloned orirepo.
+git clone https://github.com/original/orirepo.git
+I modified about 20 files, then I staged my change and made a commit
+git add
+git commit
+However, when I tried to push
+git push
+I got this error:
+remote: Permission to original/orirepo.git denied to mylogin.
+fatal: unable to access 'https://github.com/original/orirepo.git/': The requested URL returned error: 403
+
+==> Solution: 
+	  git remote set-url origin http://github.com/myname/reponame 
+and then  git push origin mybranch
+
+=========================================================================================================================
+**How do I push to GitHub under a different username?
+
+==> Solution: 
+	git config --local credential.helper ""
+	git push origin master
+It will prompt for username and password
+git config credential.helper store
+

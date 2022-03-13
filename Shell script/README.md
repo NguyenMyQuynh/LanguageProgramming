@@ -1,4 +1,9 @@
-# Shell scripting
+# Operating System
+
+<br>
+
+### Shell scripting
+
 - Shell is a program which interprets user commands through CLI like Terminal. 
 
 - Linux Shell scripting is writing a series of command for the shell to execute.

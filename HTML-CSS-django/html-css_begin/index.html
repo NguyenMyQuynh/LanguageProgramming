@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Comment win dùng Ctl+ / -->
+
+    <!-- 
+        1. h1 - h6 - heading 
+        2. p - paragraph 
+        3. img - image 
+        4. a
+        5. ul, li - unodered list, list item
+        6. table
+        7. input
+        8. button
+        9. div 
+        10.label
+        11.option
+        12.select
+        13.form
+        14.progress
+        ../../index.html
+        /
+        /Toàn bộ kiến thức trúc , element ... sau khi browser render ra gọi là DOM 
+    -->
+
+    <head>
+        <title> Demo </title>
+        <meta charset="utf-8">
+        <!-- <style>
+            // Internal 
+            h1 {
+                color: black;
+                font-size: 50px;
+            }
+        </style> -->
+        <link rel="stylesheet" href="basic-bootstrap/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <script src="basic-bootstrap/bootstrap/js/bootstrap.js"></script>
+        <div>
+            <style>
+                .test_sticky_position{
+                    width: 100%;
+                    height: 42px;
+                    margin-top: 40px;
+                    background-color: #333;
+                    position: sticky;
+                    top: 0;
+                    left: 0px; 
+                }
+            </style>
+            <div class="test_sticky_position"></div>
+            <!-- 
+            //Inline 
+            <h1 style="color:cadetblue; font-size:50px" title="Attribute là thuộc tính của thẻ html nằm trong thẻ mở">Xin chào!</h1> -->
+            
+            <h1 style="margin-top: 50px" title="Attribute là thuộc tính của thẻ html nằm trong thẻ mở">Xin chào!</h1>
+            <hr>
+
+            <address>
+                <p><b>Tên:</b> Nguyễn Mỹ Quỳnh</p>
+                <p><b>Mail:</b> 19520241@gm.uit.edu.vn</p>
+            </address>
+
+            <form action="/action_page.php">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <br><br>
+
+            <form action="/action_page.php" method="get">
+                <input type="checkbox" name="vehicle1" value="Bike" checked>
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" name="vehicle2" value="Car" checked>
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label><br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <br><br>
+         
+            <form action="/action_page.php" method="get">
+                <input type="radio" id="html" name="fav_language" value="HTML" checked>
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label><br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <br><br>
+
+            <label for="cars"><b>Choose a car:</b></label>
+
+            <select id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab" selected="True" >Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>
+    
+            <br>
+
+            <label for="browser">Choose your browser from the list:</label>
+            <input list="browsers" name="browser" id="browser">
+
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+
+            <br>
+            <label for="cars">Choose a car:</label>
+            <select id="cars">
+                <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi" selected="True">Audi</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <button>Đăng ký</button>
+
+            <p>I love to learn &lt;HTML&gt;</p>
+            <!-- thẻ p được hiểu là block, mỗi thẻ p nằm trong 1 block riêng biệt và sẽ xuống dòng  -->
+            <p>Diện tích đất của Nhật Bản trải dài từ đảo cực Bắc của Hokkaido, gần Nga, đến các khu vực cận nhiệt đới thuộc Okinawa. Thời tiết có thay đổi đáng kể từ vùng này sang vùng khác, vì vậy, bạn nên kiểm tra dự báo thời tiết  cho các khu vực mình sẽ đến du lịch.</p>
+
+            <style>
+                .test-radius-image{
+                    border-radius: 200px;
+                }                  
+            </style>
+
+            <img class="test-radius-image"  src="https://japan.net.vn/images/stores/2016/11/18/mua-dong-o-nhat-ban.jpg" alt="Mùa đông ở nhật bản">
+            <a href="https://japan.net.vn/images/stores/2016/11/18/mua-dong-o-nhat-ban.jpg" download="" >Download photo</a>
+            
+            <br><br>
+            <style>
+            a::after{
+                content: " (" attr(href) ")";
+            }</style>
+            
+            <a href="https://www.youtube.com/watch?v=LspZCNNP6aE&list=RDddIeN96fB_0&index=5">Một đêm say</a>
+            
+            <ul>
+                <li>HTML, CSS là gì?</li>
+                <li>Cài đặt môi trường</li>
+            </ul>
+
+            <ol>
+                <li>HTML, CSS là gì?</li>
+                <li>Cài đặt môi trường</li>
+            </ol>
+
+            <h1 style="color: black; font-size: 30px;">The pre element</h1>
+
+            <pre>
+            Text in a pre element
+            is displayed in a fixed-width
+            font, and it preserves
+            both      spaces and
+            line breaks
+            </pre>
+
+            <br>
+
+            <table>
+                <thead>
+                    <th>STT</th>
+                    <th>Tên</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Quỳnh Nguyễn</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pha Pha</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br><br>
+
+            <label for="file">Downloading progress:</label>
+            <progress id="file" value="32" max="100"> 32% </progress>
+
+            <br><br>
+
+            <label for="camnghi">Cảm nghĩ:<br></label>
+            <textarea cols="47" rows="10" id ="camnghi"></textarea>
+
+            <br>
+            <a href="#section-css-padding">Go to CSS padding</a>
+            <br>
+            <a href="https://google.com" target="_blank">Google</a>
+
+            <br><br><br>
+
+            <hr>
+            <!-- identity: định danh duy nhất  -->
+            Trong CSS, CSS selectors là các cách chúng ta sử dụng để chọn ra các phần tử (elements) mà chúng ta muốn “style” cho chúng.
+            <h1 id="first-heading" style="color: cadetblue;">CSS selectors?</h1>
+            <h1 class="second-heading">CSS selectors?</h1>
+            <h1 class="second-heading">CSS selectors?</h1>
+            <h1  class="third-heading">ID & Class</h1>
+
+            <style>
+                .paragraph.p1 {
+                    color: red;
+                }
+            </style>
+        
+            <p class="paragraph p1">Paragraph 1</p>
+            <p class="paragraph p1">Paragraph 1</p>
+            <p class="paragraph">Paragraph 2</p>
+            <br>
+            <hr>
+            <h1 style=" font-size: 40px;" >Priority?</h1>
+            <ol>
+                <li>Internal, External: ưu tiên CSS mới nhất</li>
+                <li>Inline - 1000</li>
+                <li>#id - 100</li>
+                <li>.class - 10</li>
+                <li>tag - 1</li>
+                <li>Equal specificity: ưu tiên CSS mới nhất</li>
+                <li>Univeral selector (*): ít ưu tiên nhất</li>
+                <li>Dùng !important ưu tiên nhất</li>
+                VD: 
+                <pre>
+                h6{
+                    color: red !important;
+                }</pre>
+            </ol>
+         
+            <br>
+            <hr>   
+
+            <h1 style="font-size: 40px;">CSS Units</h1>
+            <h2>1. Absolute units</h2>
+            <ul>
+                <li>px: cố định không thay đổi</li>
+            </ul>
+            <h2>2. Relative units</h2>
+            <ul>
+                <li>%: phụ thuộc thẻ cha chứa nó</li>
+                <img src="img/px_phantram.png" alt="%: phụ thuộc thẻ cha chứa nó là body" >
+                <br><br>
+                <li>rem: phụ thuộc thẻ html</li>
+                <img src="img/rem.png" alt="">
+                <br>
+                <img src="img/rem1.png" alt=""><br>
+                <img src="img/rem2.png" alt="">
+                <br><br>
+                <li>em: phụ thuộc thẻ cha gần nhất chứa nó có CSS cho thuộc tính đó</li>
+                <li>vw(viewport-width): phụ thuộc chiều rộng trình duyệt</li>
+                <li>vh(viewport-height): phụ thuộc chiều cao trình duyệt</li>
+                <img src="img/vw_vh.png" alt="">
+            </ul>
+
+            <hr>
+            <style>
+                .box {
+                    width: 60px;
+                    height: 60px;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    /* tất cả element chịu sự ảnh hưởng sẽ được đẩy sang bên trái
+                    float: left; */
+                }
+
+                .box1{
+                    background-color: #333;
+                }
+
+                .box2 {
+                    background-color: orange;
+                }
+
+                .box3{
+                    background-color: firebrick;
+                    padding: 5px 6px 7px 8px;
+                    border-top-width: 10px;
+                    border-bottom-width: 0px;
+                    border-right-width: 0px;
+                    border-left-width: 0px;
+                    border-style: solid;
+                    border-color: #333;
+                    /* padding và boder làm thay đổi kích thước element, còn margin thì không  */
+                    margin-top: 10px;
+                    /* box-sizing: border-box xem kích thước element(kích thước khi khai báo width height) bao gồm cả border, padding và content */
+                    box-sizing: border-box;
+                    /* đổ background-color từ content vào */
+                    background-clip: content-box;
+                }
+            </style>
+
+            <h1 id="section-css-padding">CSS Padding</h1>
+            <div class="box box1">Box1 </div>
+            <div class="box box2">Box2 </div>
+            <div class="box box3">Box3 </div>
+
+            <hr>
+            <br>
+
+            <style>
+                .header1 {
+                    width: 1350px;
+                    height: 431px;
+                    background-image: 
+                    url(https://img.lovepik.com/photo/50133/7343.jpg_wh860.jpg),
+                    url(https://thumbs.dreamstime.com/b/kharkov-ukraine-march-banner-youtube-app-logo-screen-copy-space-yellow-background-214438084.jpg);
+                    background-size: auto 50%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-position: top 20px right 20px;
+                    background-position: 20px 20px;
+                }
+            </style>
+            <div class="header1"></div>
+
+            <style>
+                .header2 {
+                    width: 100%;
+                    height: 50vh;
+                    background-image: 
+                    linear-gradient(0, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
+                    url(https://img.lovepik.com/photo/50133/7343.jpg_wh860.jpg);
+                    background-size: auto 100%;
+                    /* background-size: contain; //lấy cạnh dài không che khuất ảnh, không full màn hình
+                    background-size: cover; //lấy cạnh dài chấp nhận che khuất ảnh, full màn hình */
+                    background-repeat: no-repeat;
+                    box-sizing: border-box;
+                    /* background-origin: content-box; */
+                }
+                li.li_hover:hover{
+                    color: brown;
+                }
+
+                li.li_active:active{
+                    color: brown;
+                }
+                li.li_first-child:first-child{
+                    color: brown;
+                }
+                li.li_last-child:last-child{
+                    color: brown;
+                }
+            </style>
+            <div class="header2"></div>
+
+            <hr><br>
+            <h1 style="font-size: 40px;">CSS Pseudo classes</h1>
+            <ul>
+                <li class="li_first-child">:root</li>
+                <li class="li_hover">:hover</li>
+                <li class="li_active">:active</li>
+                <li >:first-child</li>
+                <li class="li_last-child">:last-child</li>
+            </ul>
+
+            <br>
+            <style>
+                h1::selection{
+                    color: tomato;
+                }
+                h1.test_first-letter::first-letter{
+                    font-size: 50px;
+                }
+                div.test_pseudo::before{
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    margin: 5px;
+                    background-color: #fff;
+                }
+                div.test_pseudo::after{
+                    content: "";
+                    display: block;
+                    margin: 5px;
+                    width: 10px;
+                    height: 10px;
+                    background-color: #fff;
+                }
+            </style>
+            <h1 class ="test_first-letter" style="font-size: 40px;">CSS pseudo element</h1>
+            <div style="background-color: violet; width: 100% ; height: 100px " class="test_pseudo"> 
+                <div style="background-color: black; width: 10px ; height: 10px " > 
+                </div>
+                <div style=" margin-top:5px; background-color: black; width: 10px ; height: 10px " > 
+                </div>
+            </div>
+            <ul>
+                <li>::before</li>
+                <li>::after</li>
+                <li>::first-letter</li>
+                <li>::first-line</li>
+                <li>::selection</li>
+            </ul>
+
+            <hr>
+            <h1 style="font-size: 40px">CSS Position</h1>
+            <ul>
+
+                <li>Relative</li>
+                <div>
+                    <style>
+                        h3{
+                            position: relative;
+                            top: 50px;
+                            left: 50px;
+                            margin: 0;
+                        }
+                    </style>
+                    VD:
+                    <h3>Position</h3>
+                    <ul>
+                        <li>One </li>
+                        <li>Two</li>
+                        <li>Three</li>
+                    </ul>
+                </div>
+
+                <br>
+                <div>
+                    <li>Absolute</li>
+                    <img src="img/absolute_css_position.png" alt="">
+                    <img src="img/absolute_css_position1.png" alt="">
+                    <img src="img/absolute_css_position2.png" alt="">
+                    <img src="img/absolute_css_position3.png" alt="">
+                </div>
+               
+                <br>
+                <li>Fixed</li>
+                <style>
+                    .test_fixed_position{
+                        width: 100%;
+                        height: 42px;
+                        background-color: #333;
+                        position: fixed;
+                        bottom: 0;
+                        left: 8px; 
+                    }
+                </style>
+                <div class="test_fixed_position"></div>
+
+                <br>
+                <li style="margin-bottom: 70px">Sticky</li>
+               
+            </ul>
+
+            <hr>
+            <h1 style="font-size: 40px;">BEM</h1>
+            <img src="/img/BEM.png" alt="bem">
+
+            <br><br><hr>
+            <h1>Flexbox</h1>
+            <a href="/flexbox.html">Flexbox</a>
+            <br><br>
+
+            <a href="#">Jump to top </a>
+            <br><br><br><br>
+        </div>
+        <hr>
+    </body>
+</html>

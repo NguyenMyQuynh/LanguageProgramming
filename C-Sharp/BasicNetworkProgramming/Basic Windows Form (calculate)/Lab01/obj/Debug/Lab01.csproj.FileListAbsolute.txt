@@ -1,0 +1,14 @@
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\bin\Debug\Lab01.exe.config
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\bin\Debug\Lab01.exe
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\bin\Debug\Lab01.pdb
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\obj\Debug\Lab01.csprojAssemblyReference.cache
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\obj\Debug\Lab01.Lab01_Bai01.resources
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\obj\Debug\Lab01.Lab01_Bai02.resources
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\obj\Debug\Lab01.Lab01_Bai03.resources
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\obj\Debug\Lab01.Lab01_Bai05.resources
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\obj\Debug\Lab01.MainForm.resources
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\obj\Debug\Lab01.Properties.Resources.resources
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\obj\Debug\Lab01.csproj.GenerateResource.cache
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\obj\Debug\Lab01.exe
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\obj\Debug\Lab01.pdb
+E:\DAI_HOC\CurrentSemester\LTMCB\Lab01\Lab01\obj\Debug\Lab01.Lab01_Bai04.resources
